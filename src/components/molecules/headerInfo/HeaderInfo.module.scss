@@ -6,16 +6,17 @@
     height: 0;
   }
   to {
-    height: 100px;
+    height: 78px;
   }
 }
 
 @keyframes slideUp {
   from {
-    height: 100px;
+    height: 78px;
   }
   to {
     height: 0;
+    display: none;
   }
 }
 
@@ -23,7 +24,6 @@
   position: fixed;
   top: 60px;
   right: 0;
-  height: 0;
   width: 100vw;
   display: flex;
   flex-direction: column;
