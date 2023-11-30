@@ -4,6 +4,7 @@ import HeaderInfo from "../../molecules/headerInfo/HeaderInfo";
 import styles from "./Header.module.scss";
 import useShowMenu from "../../../hooks/useShowMenu/useShowMenu";
 import MenuContainer from "../../molecules/menuContainer/MenuContainer";
+import styled from "@emotion/styled";
 
 function Header(): JSX.Element {
   const [isMenuClicked, setIsMenuClicked] = useState<null | boolean>(null);
@@ -11,7 +12,7 @@ function Header(): JSX.Element {
 
   return (
     <>
-      <header className={styles.container}>
+      <Container>
         <div className={styles.inner}>
           <LogoText />
           <HeaderInfo
@@ -20,9 +21,18 @@ function Header(): JSX.Element {
           />
         </div>
         <MenuContainer onClick={handleClickMenu} />
-      </header>
+      </Container>
     </>
   );
 }
 
 export default Header;
+
+const Container = styled.header`
+  height: 60px;
+  background-color: rgb(33, 33, 33);
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+`;

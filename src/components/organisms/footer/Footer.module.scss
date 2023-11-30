@@ -2,13 +2,12 @@
 @import "/src/styles/mixins";
 
 .inner {
-  width: 100%;
-  height: 40px;
+  height: 100%;
   padding: 0 20px;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
 
   @include respond-above("sm") {
   }
@@ -17,6 +16,5 @@
   @include respond-above("lg") {
   }
   @include respond-above("xl") {
-    width: 1240px;
   }
 }

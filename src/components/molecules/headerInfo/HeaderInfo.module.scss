@@ -52,12 +52,12 @@
 
     &.clicked {
       @include commonSmallStyle();
-      animation: slideDown 0.5s ease forwards;
+      animation: slideDown 0.2s ease forwards;
     }
 
     &.unClicked {
       @include commonSmallStyle();
-      animation: slideUp 0.5s ease forwards;
+      animation: slideUp 0.2s ease forwards;
     }
   }
 }
