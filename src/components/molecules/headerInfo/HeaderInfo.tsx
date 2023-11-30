@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from "react";
 import InfoDetail from "../../atoms/infoDetail/InfoDetail";
 import styles from "./HeaderInfo.module.scss";
-import useHandleHeaderResize from "../../../hooks/useHandleHeaderResize/useHandleHeaderResize";
+import useHandleResizeHeader from "../../../hooks/useHandleResizeHeader/useHandleResizeHeader";
 
 interface IProps {
   isMenuClicked: boolean | null;
@@ -19,7 +19,7 @@ function HeaderInfo({ isMenuClicked, setIsMenuClicked }: IProps): JSX.Element {
 
   const clickedClass = `${styles.container} ${animationClass}`;
 
-  useHandleHeaderResize({
+  useHandleResizeHeader({
     isMenuClicked,
     setIsMenuClicked,
   });

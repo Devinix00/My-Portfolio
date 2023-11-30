@@ -29,10 +29,13 @@ function Header(): JSX.Element {
 export default Header;
 
 const Container = styled.header`
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: 60px;
   background-color: rgb(33, 33, 33);
   color: white;
   display: flex;
   align-items: center;
-  position: relative;
+  transition: none;
 `;

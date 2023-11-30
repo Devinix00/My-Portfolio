@@ -16,5 +16,19 @@ code {
   font-family: "Gowun Dodum", sans-serif;
   box-sizing: border-box;
   transition: width 0.3s ease, height 0.3s ease, font-size 0.3s ease,
-    background-color 0.3s ease;
+    background-color 0.3s ease, margin 0.3s ease, padding 0.3s ease;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #929292;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #212121;
 }

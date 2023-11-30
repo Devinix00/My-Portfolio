@@ -5,7 +5,7 @@ interface IProps {
   setIsMenuClicked: Dispatch<SetStateAction<boolean | null>>;
 }
 
-function useHandleHeaderResize({ isMenuClicked, setIsMenuClicked }: IProps) {
+function useHandleResizeHeader({ isMenuClicked, setIsMenuClicked }: IProps) {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 992) {
@@ -21,4 +21,4 @@ function useHandleHeaderResize({ isMenuClicked, setIsMenuClicked }: IProps) {
   }, [isMenuClicked, setIsMenuClicked]);
 }
 
-export default useHandleHeaderResize;
+export default useHandleResizeHeader;
