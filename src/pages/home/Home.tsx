@@ -1,5 +1,11 @@
+import HomeTemplate from "../../components/templates/homeTemplate/HomeTemplate";
+
 function Home(): JSX.Element {
-  return <></>;
+  return (
+    <>
+      <HomeTemplate />
+    </>
+  );
 }
 
 export default Home;

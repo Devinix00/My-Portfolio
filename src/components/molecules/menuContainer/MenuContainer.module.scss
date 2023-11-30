@@ -1,0 +1,21 @@
+@import "/src/styles/breakpoints";
+@import "/src/styles/mixins";
+
+.menuContainer {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond-above("sm") {
+  }
+  @include respond-above("md") {
+  }
+  @include respond-above("lg") {
+    display: none;
+  }
+  @include respond-above("xl") {
+  }
+}

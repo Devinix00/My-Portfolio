@@ -1,0 +1,31 @@
+@import "/src/styles/breakpoints";
+@import "/src/styles/mixins";
+
+.container {
+  height: 60px;
+  background-color: rgb(33, 33, 33);
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .inner {
+    height: 40px;
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond-above("sm") {
+    }
+    @include respond-above("md") {
+    }
+    @include respond-above("lg") {
+    }
+    @include respond-above("xl") {
+      width: 1200px;
+    }
+  }
+}
