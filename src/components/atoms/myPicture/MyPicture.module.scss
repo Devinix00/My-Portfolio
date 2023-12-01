@@ -1,0 +1,19 @@
+@import "/src/styles/breakpoints";
+@import "/src/styles/mixins";
+
+.myPicture {
+  display: none;
+
+  @include respond-above("sm") {
+  }
+  @include respond-above("md") {
+    display: block;
+    width: 47.5%;
+    height: 47.5%;
+    border-radius: 10%;
+  }
+  @include respond-above("lg") {
+  }
+  @include respond-above("xl") {
+  }
+}

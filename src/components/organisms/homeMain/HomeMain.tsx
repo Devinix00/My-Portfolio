@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import MySimpleInfo from "../../molecules/mySimpleInfo/MySimpleInfo";
 import styles from "./HomeMain.module.scss";
+import AboutMe from "../aboutMe/AboutMe";
 
 function HomeMain(): JSX.Element {
   return (
     <Container>
       <div className={styles.inner}>
         <MySimpleInfo />
+        <AboutMe />
       </div>
     </Container>
   );

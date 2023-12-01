@@ -1,0 +1,18 @@
+@import "/src/styles/breakpoints";
+@import "/src/styles/mixins";
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  @include respond-above("sm") {
+  }
+  @include respond-above("md") {
+    width: 47.5%;
+  }
+  @include respond-above("lg") {
+  }
+  @include respond-above("xl") {
+  }
+}
