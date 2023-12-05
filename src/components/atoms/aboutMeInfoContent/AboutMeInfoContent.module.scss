@@ -1,19 +1,23 @@
 @import "/src/styles/breakpoints";
 @import "/src/styles/mixins";
 
-.myPicture {
-  display: none;
-
+.content {
+  font-weight: 600;
+  font-size: 14px;
   @include respond-above("sm") {
+    font-size: 15px;
   }
   @include respond-above("md") {
-    display: block;
-    width: 47.5%;
-    height: 47.5%;
-    border-radius: 15px;
+    font-size: 17px;
   }
   @include respond-above("lg") {
+    font-size: 18.5px;
   }
   @include respond-above("xl") {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 12px;
   }
 }

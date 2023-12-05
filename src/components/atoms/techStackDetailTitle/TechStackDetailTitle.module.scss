@@ -1,0 +1,29 @@
+@import "/src/styles/breakpoints";
+@import "/src/styles/mixins";
+
+.title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 20px;
+
+  @include respond-above("sm") {
+  }
+  @include respond-above("md") {
+    font-size: 16px;
+  }
+  @include respond-above("lg") {
+    font-size: 18px;
+  }
+  @include respond-above("xl") {
+    font-size: 22px;
+  }
+
+  &.otherStacks {
+    text-align: center;
+    
+    @include respond-above("sm") {
+      text-align: start;
+    }
+  }
+}

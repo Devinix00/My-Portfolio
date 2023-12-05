@@ -2,6 +2,7 @@ import styled from "styled-components";
 import MySimpleInfo from "../../molecules/mySimpleInfo/MySimpleInfo";
 import styles from "./HomeMain.module.scss";
 import AboutMe from "../aboutMe/AboutMe";
+import TechStacks from "../techStacks/TechStacks";
 
 function HomeMain(): JSX.Element {
   return (
@@ -9,6 +10,7 @@ function HomeMain(): JSX.Element {
       <div className={styles.inner}>
         <MySimpleInfo />
         <AboutMe />
+        <TechStacks />
       </div>
     </Container>
   );

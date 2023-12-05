@@ -4,6 +4,8 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/home/Home";
+import { createStyledBreakpointsTheme } from "styled-breakpoints";
+import { DefaultTheme, ThemeProvider } from "styled-components";
 
 const router = createBrowserRouter([
   {
@@ -12,12 +14,16 @@ const router = createBrowserRouter([
   },
 ]);
 
+const theme: DefaultTheme = createStyledBreakpointsTheme();
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider theme={theme}>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
