@@ -4,7 +4,7 @@ import Logo from "../../atoms/logo/Logo";
 function Logos(): JSX.Element {
   return (
     <Container>
-      <Logo path="https://github.com/KitsuNeko00" content="Github" />
+      <Logo path="https://github.com/Devinix00" content="Github" />
       <Logo path="https://velog.io/@dpldpl" content="Velog" />
     </Container>
   );

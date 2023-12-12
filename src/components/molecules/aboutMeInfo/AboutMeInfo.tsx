@@ -23,7 +23,7 @@ function AboutMeInfo({ type }: IProps): JSX.Element {
     email: "dpldpl123456@naver.com",
     github: (
       <Link
-        to="https://github.com/KitsuNeko00"
+        to="https://github.com/Devinix00"
         target="_blank"
         className={styles.link}
       >
