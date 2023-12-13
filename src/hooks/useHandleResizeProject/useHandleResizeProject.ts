@@ -16,16 +16,20 @@ function useHandleResizeProject({
   useEffect(() => {
     const updateSize = () => {
       if (window.innerWidth >= 992) {
-        setIsResized(() => true);
+        setIsResized(true);
       } else {
-        setIsResized(() => false);
+        setIsResized(false);
       }
       if (parentRef.current) {
         const parentWidth = parentRef.current.offsetWidth;
-        setChildSize(() => ({
-          width: parentWidth / 2,
-          height: parentWidth / 2,
-        }));
+        const newWidth = parentWidth / 2;
+        const newHeight = parentWidth / 2;
+        if (childSize.width !== newWidth || childSize.height !== newHeight) {
+          setChildSize({
+            width: newWidth,
+            height: newHeight,
+          });
+        }
       }
     };
 
@@ -33,7 +37,7 @@ function useHandleResizeProject({
     updateSize();
 
     return () => window.removeEventListener("resize", updateSize);
-  }, [childSize]);
+  }, [parentRef, setIsResized]); 
 }
 
 export default useHandleResizeProject;
