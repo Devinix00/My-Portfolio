@@ -1,3 +1,6 @@
+@import "/src/styles/breakpoints";
+@import "/src/styles/mixins";
+
 .link {
   text-decoration: none;
 
@@ -5,15 +8,37 @@
     background-color: white;
     color: #212121;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 900;
+    font-size: 12px;
 
     &:hover {
       background-color: rgb(202, 202, 202);
+    }
+
+    @include respond-above("sm") {
+      font-size: 13px;
+      width: 53px;
+      height: 53px;
+    }
+    @include respond-above("md") {
+      font-size: 14px;
+      width: 56px;
+      height: 56px;
+    }
+    @include respond-above("lg") {
+      font-size: 15px;
+      width: 60px;
+      height: 60px;
+    }
+    @include respond-above("xl") {
+      font-size: 16px;
+      width: 65px;
+      height: 65px;
     }
   }
 }

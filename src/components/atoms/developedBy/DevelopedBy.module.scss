@@ -1,0 +1,19 @@
+@import "/src/styles/breakpoints";
+@import "/src/styles/mixins";
+
+.developedBy {
+  font-size: 12px;
+
+  @include respond-above("sm") {
+    font-size: 13px;
+  }
+  @include respond-above("md") {
+    font-size: 14px;
+  }
+  @include respond-above("lg") {
+    font-size: 15px;
+  }
+  @include respond-above("xl") {
+    font-size: 16px;
+  }
+}

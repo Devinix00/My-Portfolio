@@ -1,21 +1,40 @@
 @import "/src/styles/breakpoints";
 @import "/src/styles/mixins";
 
-.inner {
-  width: 90%;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container {
+  background-color: #212121;
+  color: white;
+  height: 120px;
 
   @include respond-above("sm") {
+    height: 133px;
   }
   @include respond-above("md") {
+    height: 146px;
   }
   @include respond-above("lg") {
+    height: 159px;
   }
   @include respond-above("xl") {
-    width: 1200px;
+    height: 180px;
+  }
+
+  .inner {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond-above("sm") {
+    }
+    @include respond-above("md") {
+    }
+    @include respond-above("lg") {
+    }
+    @include respond-above("xl") {
+      width: 1200px;
+    }
   }
 }
