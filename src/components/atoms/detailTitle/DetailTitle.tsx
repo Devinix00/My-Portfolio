@@ -5,7 +5,10 @@ interface IProps {
 }
 
 function DetailTitle({ title }: IProps): JSX.Element {
-  return <h2 className={styles.aboutMeText}>{title}</h2>;
+  const classType = `${styles.title} ${
+    title === "About me" ? styles.aboutMe : null
+  }`;
+  return <h2 className={classType}>{title}</h2>;
 }
 
 export default DetailTitle;

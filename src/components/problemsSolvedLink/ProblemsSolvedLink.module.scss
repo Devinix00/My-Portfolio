@@ -1,0 +1,37 @@
+@import "/src/styles/breakpoints";
+@import "/src/styles/mixins";
+
+.link {
+  background-color: #212121;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 100px;
+  height: calc(100px / 3);
+  font-size: 12px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @include respond-above("sm") {
+    font-size: 13px;
+    width: 112.5px;
+  }
+  @include respond-above("md") {
+    font-size: 14px;
+    width: 125px;
+  }
+  @include respond-above("lg") {
+    font-size: 15px;
+    width: 137.5px;
+  }
+  @include respond-above("xl") {
+    font-size: 16px;
+    width: 150px;
+    height: 50px;
+  }
+}
