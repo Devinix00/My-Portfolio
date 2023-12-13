@@ -29,7 +29,7 @@ function Header(): JSX.Element {
 export default Header;
 
 const Container = styled.header`
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   height: 60px;
