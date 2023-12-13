@@ -15,6 +15,8 @@ function useHandleResizeInfoTitle({ isSmallWidth, setIsSmallWidth }: IProps) {
       }
     };
 
+    handleResize();
+
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
