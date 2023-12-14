@@ -15,10 +15,12 @@
     @include respond-above("md") {
       margin-bottom: 30px;
     }
+    @media screen and (min-width: 800px) {
+      width: 700px;
+    }
     @include respond-above("lg") {
     }
     @include respond-above("xl") {
-      width: 1200px;
       margin-bottom: 40px;
     }
   }
