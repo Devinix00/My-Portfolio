@@ -1,16 +1,31 @@
+import ModalDetailTitle from "../../atoms/modalDetailTitle/ModalDetailTitle";
 import ModalDetailContainer from "../../molecules/modalDetailContainer/ModalDetailContainer";
-import ModalDetailTitleContainer from "../../molecules/modalDetailTitleContainer/ModalDetailTitleContainer";
 import styles from "./ModalIndividualContent.module.scss";
 
-function ModalIndividualContent(): JSX.Element {
+interface IProps {
+  content: IModalContents;
+}
+
+function ModalIndividualContent({ content }: IProps): JSX.Element {
   return (
     <>
-      <ModalDetailTitleContainer />
+      <ModalDetailTitle title={content.title} />
       <div className={styles.modalDetailsContainer}>
-        <ModalDetailContainer bracket="문제 상황" />
-        <ModalDetailContainer bracket="원인" />
-        <ModalDetailContainer bracket="문제 해결 과정" />
-        <ModalDetailContainer bracket="기술 블로그 링크" />
+        <ModalDetailContainer
+          bracket="문제 상황"
+          content={content.circumstance}
+        />
+        <ModalDetailContainer bracket="원인" content={content.reason} />
+
+        <ModalDetailContainer
+          bracket="문제 해결 과정"
+          content={content.process}
+        />
+
+        <ModalDetailContainer
+          bracket="기술 블로그 링크"
+          content={content.blogLink}
+        />
       </div>
     </>
   );

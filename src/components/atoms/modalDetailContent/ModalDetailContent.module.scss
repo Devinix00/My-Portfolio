@@ -1,0 +1,35 @@
+@import "/src/styles/breakpoints";
+@import "/src/styles/mixins";
+
+.container {
+  @mixin commonStyle {
+    line-height: 200%;
+    font-size: 14px;
+
+    @include respond-above("sm") {
+      font-size: 14.5px;
+    }
+    @include respond-above("md") {
+      font-size: 15px;
+    }
+    @include respond-above("lg") {
+      font-size: 15.5px;
+    }
+    @include respond-above("xl") {
+      font-size: 16px;
+    }
+  }
+
+  .content {
+    @include commonStyle();
+  }
+  .link {
+    @include commonStyle();
+    text-decoration: none;
+    color: #258ddb;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

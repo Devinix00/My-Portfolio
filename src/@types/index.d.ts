@@ -15,5 +15,5 @@ interface IModalContents {
   circumstance: string;
   reason: string;
   process: string;
-  githubLink: string;
+  blogLink: string;
 }

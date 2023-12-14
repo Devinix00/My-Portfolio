@@ -3,16 +3,23 @@
 
 .container {
   flex: 1;
-  width: 90%;
-  margin: 0 auto;
+  overflow-y: auto;
 
-  @include respond-above("sm") {
-  }
-  @include respond-above("md") {
-  }
-  @include respond-above("lg") {
-  }
-  @include respond-above("xl") {
-    width: 1200px;
+  .inner {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    @include respond-above("sm") {
+    }
+    @include respond-above("md") {
+      margin-bottom: 30px;
+    }
+    @include respond-above("lg") {
+    }
+    @include respond-above("xl") {
+      width: 1200px;
+      margin-bottom: 40px;
+    }
   }
 }

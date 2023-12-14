@@ -5,6 +5,7 @@
   font-weight: 600;
   font-size: 22px;
   margin-top: 20px;
+  color: #212121;
 
   @include respond-above("sm") {
     font-size: 24px;

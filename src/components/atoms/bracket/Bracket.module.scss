@@ -1,7 +1,7 @@
 @import "/src/styles/breakpoints";
 @import "/src/styles/mixins";
 
-.bracket {
+@mixin bracket() {
   color: #212121;
   font-weight: 600;
   font-size: 14px;
@@ -18,4 +18,28 @@
   @include respond-above("xl") {
     font-size: 20px;
   }
+}
+
+.bracket {
+  @include bracket();
+}
+
+.circumstance {
+  @include bracket();
+  color: rgba(212, 76, 71, 1);
+}
+
+.reason {
+  @include bracket();
+  color: #448361;
+}
+
+.process {
+  @include bracket();
+  color: #337ea9;
+}
+
+.blogLink {
+  @include bracket();
+  color: #9f6b53;
 }

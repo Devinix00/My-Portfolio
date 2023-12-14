@@ -1,2 +1,8 @@
 @import "/src/styles/breakpoints";
 @import "/src/styles/mixins";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
