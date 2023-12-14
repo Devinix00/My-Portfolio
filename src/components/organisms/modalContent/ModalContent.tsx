@@ -41,7 +41,7 @@ const portfolioModalContents: IModalContents[] = [
         closeModal을 호출하도록 설정함.`,
 
     blogLink:
-      "https://velog.io/@dpldpl/React의-무한-루프-문제-해결-조건부-상태-업데이트로-성능-최적화하기-문제-해결",
+      "https://velog.io/@dpldpl/모달창-애니메이션-문제-해결-문제-해결",
   },
 ];
 
@@ -123,13 +123,13 @@ const AIVariableNameContents: IModalContents[] = [
       사용자 경험(UX)에 부정적인 영향.`,
 
     reason: `입력 폼 컴포넌트가 
-      postion: fixed; 로 스타일링 되어 
+      postion: fixed;로 스타일링 되어 
       해당 요소를 문서의 흐름에서 제거하고 
       부모 요소와의 관계를 무시하게 만들기 때문에 
       모바일 브라우저가 최하단을 넘어 공백이 생겼을때 
       그 공백에 위치하게 된 것.`,
 
-    process: `해당 요소를 position: absolute;로 수정함으로 간단하게 해결`,
+    process: `해당 요소를 position: absolute; bottom:0;으로 수정함으로 간단하게 해결`,
 
     blogLink:
       "https://velog.io/@dpldpl/모바일-환경에서의-하단-고정-컴포넌트-브라우저-넘침-문제-문제-해결",
