@@ -8,5 +8,12 @@ interface IProject {
   techStacks: string[];
   githubBracket: string;
   githubLink: string;
-  problemsSolvedLink: string;
+}
+
+interface IModalContents {
+  title: string;
+  circumstance: string;
+  reason: string;
+  process: string;
+  githubLink: string;
 }

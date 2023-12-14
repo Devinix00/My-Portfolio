@@ -19,7 +19,6 @@ const projectTypes: IProject[] = [
     ],
     githubBracket: "Github",
     githubLink: "https://github.com/Devinix00/my-portfolio",
-    problemsSolvedLink: "/project/portfolio",
   },
   {
     type: "Blog",
@@ -35,7 +34,6 @@ const projectTypes: IProject[] = [
     techStacks: ["Next.Js", "Typescript", "MUI", "SCSS", "Zustand"],
     githubBracket: "Github",
     githubLink: "https://github.com/Devinix00/blog-project",
-    problemsSolvedLink: "/project/blog",
   },
   {
     type: "AI Variable Name",
@@ -50,7 +48,6 @@ const projectTypes: IProject[] = [
     techStacks: ["Next.Js", "Typescript", "MUI", "SCSS", "Zustand"],
     githubBracket: "Github",
     githubLink: "https://github.com/Devinix00/AI-Variable-Name",
-    problemsSolvedLink: "/project/AIVariableName",
   },
   {
     type: "To Do List",
@@ -73,7 +70,6 @@ const projectTypes: IProject[] = [
     ],
     githubBracket: "Github",
     githubLink: "https://github.com/Devinix00/ToDoList-Next13-Atomic",
-    problemsSolvedLink: "/project/toDoList",
   },
 ];
 

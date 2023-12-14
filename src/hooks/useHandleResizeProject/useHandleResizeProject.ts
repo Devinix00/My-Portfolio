@@ -14,16 +14,18 @@ function useHandleResizeProject({
   setIsResized,
 }: IProps) {
   useEffect(() => {
-    const updateSize = () => {
+    const observer = new ResizeObserver((entries) => {
       if (window.innerWidth >= 992) {
         setIsResized(true);
       } else {
         setIsResized(false);
       }
-      if (parentRef.current) {
-        const parentWidth = parentRef.current.offsetWidth;
+
+      for (let entry of entries) {
+        const parentWidth = entry.contentRect.width;
         const newWidth = parentWidth / 2;
         const newHeight = parentWidth / 2;
+
         if (childSize.width !== newWidth || childSize.height !== newHeight) {
           setChildSize({
             width: newWidth,
@@ -31,13 +33,18 @@ function useHandleResizeProject({
           });
         }
       }
+    });
+
+    if (parentRef.current) {
+      observer.observe(parentRef.current);
+    }
+
+    return () => {
+      if (parentRef.current) {
+        observer.unobserve(parentRef.current);
+      }
     };
-
-    window.addEventListener("resize", updateSize);
-    updateSize();
-
-    return () => window.removeEventListener("resize", updateSize);
-  }, [parentRef, setIsResized]); 
+  }, [parentRef, childSize, setChildSize, setIsResized]);
 }
 
 export default useHandleResizeProject;

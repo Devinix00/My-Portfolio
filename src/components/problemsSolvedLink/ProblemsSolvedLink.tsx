@@ -1,15 +1,22 @@
-import { Link } from "react-router-dom";
+import useOpenModalType from "../../hooks/useOpenModalType/useOpenModalType";
 import styles from "./ProblemsSolvedLink.module.scss";
 
 interface IProps {
-  problemsSolvedLink: string;
+  type: string;
 }
 
-function ProblemsSolvedLink({ problemsSolvedLink }: IProps): JSX.Element {
+function ProblemsSolvedLink({ type }: IProps): JSX.Element {
+  const { openModalType } = useOpenModalType();
+
   return (
-    <Link to={problemsSolvedLink} className={styles.link}>
+    <button
+      onClick={() => {
+        openModalType(type);
+      }}
+      className={styles.button}
+    >
       해결한 문제들
-    </Link>
+    </button>
   );
 }
 

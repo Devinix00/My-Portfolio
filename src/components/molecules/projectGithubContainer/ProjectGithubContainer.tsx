@@ -1,4 +1,4 @@
-import ProjectDetailBracket from "../../atoms/projectDetailBracket/ProjectDetailBracket";
+import ProjectDetailBracket from "../../atoms/bracket/Bracket";
 import ProjectDetailGithubLink from "../../atoms/projectDetailGithubLink/ProjectDetailGithubLink";
 import styles from "./ProjectGithubContainer.module.scss";
 

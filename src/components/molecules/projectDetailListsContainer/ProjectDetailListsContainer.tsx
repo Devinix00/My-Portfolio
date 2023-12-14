@@ -1,4 +1,4 @@
-import ProjectDetailBracket from "../../atoms/projectDetailBracket/ProjectDetailBracket";
+import Bracket from "../../atoms/bracket/Bracket";
 import ProjectDetailLists from "../projectDetailLists/ProjectDetailLists";
 import styles from "./ProjectDetailListsContainer.module.scss";
 
@@ -10,7 +10,7 @@ interface IProps {
 function ProjectDetailListsContainer({ bracket, lists }: IProps): JSX.Element {
   return (
     <div className={styles.container}>
-      <ProjectDetailBracket bracket={bracket} />
+      <Bracket bracket={bracket} />
       <ProjectDetailLists lists={lists} />
     </div>
   );

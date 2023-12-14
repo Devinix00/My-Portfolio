@@ -1,6 +1,6 @@
 import ProjectDetailDescription from "../../atoms/projectDetailDescription/ProjectDetailDescription";
 import styles from "./ProjectDetailDescriptionContainer.module.scss";
-import ProjectDetailBracket from "../../atoms/projectDetailBracket/ProjectDetailBracket";
+import ProjectDetailBracket from "../../atoms/bracket/Bracket";
 
 interface IProps {
   bracket: string;

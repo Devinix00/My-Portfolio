@@ -6,6 +6,7 @@ import ProjectGithubContainer from "../projectGithubContainer/ProjectGithubConta
 import styles from "./ProjectDetail.module.scss";
 
 function ProjectDetail({
+  type,
   descriptionBracket,
   featuresBracket,
   description,
@@ -14,7 +15,6 @@ function ProjectDetail({
   techStacks,
   githubBracket,
   githubLink,
-  problemsSolvedLink,
 }: IProject): JSX.Element {
   return (
     <div className={styles.container}>
@@ -28,7 +28,7 @@ function ProjectDetail({
         lists={techStacks}
       />
       <ProjectGithubContainer bracket={githubBracket} githubLink={githubLink} />
-      <ProblemsSolvedLink problemsSolvedLink={problemsSolvedLink} />
+      <ProblemsSolvedLink type={type} />
     </div>
   );
 }

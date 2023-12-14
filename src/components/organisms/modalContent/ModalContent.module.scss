@@ -1,0 +1,18 @@
+@import "/src/styles/breakpoints";
+@import "/src/styles/mixins";
+
+.container {
+  flex: 1;
+  width: 90%;
+  margin: 0 auto;
+
+  @include respond-above("sm") {
+  }
+  @include respond-above("md") {
+  }
+  @include respond-above("lg") {
+  }
+  @include respond-above("xl") {
+    width: 1200px;
+  }
+}

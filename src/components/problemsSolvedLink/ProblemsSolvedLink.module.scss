@@ -1,7 +1,7 @@
 @import "/src/styles/breakpoints";
 @import "/src/styles/mixins";
 
-.link {
+.button {
   background-color: #212121;
   color: white;
   text-decoration: none;
@@ -12,6 +12,7 @@
   width: 100px;
   height: calc(100px / 3);
   font-size: 12px;
+  cursor: pointer;
 
   &:hover {
     text-decoration: underline;

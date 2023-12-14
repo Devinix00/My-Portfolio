@@ -2,28 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Home from "./pages/home/Home";
-import { createStyledBreakpointsTheme } from "styled-breakpoints";
-import { DefaultTheme, ThemeProvider } from "styled-components";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-]);
-
-const theme: DefaultTheme = createStyledBreakpointsTheme();
+import App from "./App";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <RouterProvider router={router} />
-    </ThemeProvider>
+    <App />
   </React.StrictMode>
 );
 
