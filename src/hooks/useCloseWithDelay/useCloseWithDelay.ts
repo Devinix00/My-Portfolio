@@ -14,7 +14,7 @@ function useCloseWithDelay({ setIsClosing }: IProps): IReturn {
     setIsClosing(true);
     setTimeout(() => {
       closeModal();
-    }, 200);
+    }, 350);
   };
   return { closeWithDelay };
 }

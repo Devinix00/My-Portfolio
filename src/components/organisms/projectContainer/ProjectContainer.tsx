@@ -16,6 +16,7 @@ const projectTypes: IProject[] = [
       "styled-breakpoints",
       "SCSS",
       "MUI",
+      "Zustand",
     ],
     githubBracket: "Github",
     githubLink: "https://github.com/Devinix00/my-portfolio",

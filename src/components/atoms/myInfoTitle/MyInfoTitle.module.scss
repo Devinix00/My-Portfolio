@@ -2,21 +2,21 @@
 @import "/src/styles/mixins";
 
 .myInfoTitle {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   text-align: center;
   line-height: 150%;
+  font-family: "Pretendard Variable";
 
   @include respond-above("sm") {
-    font-size: 22px;
+    font-size: 24px;
   }
   @include respond-above("md") {
-    font-size: 26px;
-  }
-  @include respond-above("lg") {
     font-size: 30px;
   }
-  @include respond-above("xl") {
+  @include respond-above("lg") {
     font-size: 36px;
+  }
+  @include respond-above("xl") {
   }
 }
