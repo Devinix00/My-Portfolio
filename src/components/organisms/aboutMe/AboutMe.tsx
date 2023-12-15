@@ -7,7 +7,7 @@ import DetailTitle from "../../atoms/detailTitle/DetailTitle";
 function AboutMe(): JSX.Element {
   return (
     <div className={styles.container}>
-      <DetailTitle title="About me" />
+      <DetailTitle title="About Me" />
       <MyProfileInfo>
         <MyPicture />
         <AboutMeInfoContainer />
@@ -19,6 +19,8 @@ function AboutMe(): JSX.Element {
 export default AboutMe;
 
 const MyProfileInfo = styled.div`
-  display: flex;
-  justify-content: space-between;
+  ${({ theme }) => theme.breakpoints.up("md")} {
+    display: flex;
+    justify-content: space-between;
+  }
 `;

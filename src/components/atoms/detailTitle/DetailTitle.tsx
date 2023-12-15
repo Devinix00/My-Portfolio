@@ -6,7 +6,7 @@ interface IProps {
 
 function DetailTitle({ title }: IProps): JSX.Element {
   const classType = `${styles.title} ${
-    title === "About me" ? styles.aboutMe : null
+    title === "About Me" ? styles.aboutMe : null
   }`;
   return <h2 className={classType}>{title}</h2>;
 }
