@@ -24,7 +24,7 @@
 
   &.aboutMe {
     margin-bottom: 20px;
-    
+
     @include respond-above("sm") {
       margin-bottom: 30px;
     }
