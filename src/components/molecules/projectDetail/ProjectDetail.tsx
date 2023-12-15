@@ -28,7 +28,7 @@ function ProjectDetail({
         lists={techStacks}
       />
       <ProjectGithubContainer bracket={githubBracket} githubLink={githubLink} />
-      <ProblemsSolvedLink type={type} />
+      {type !== "To Do List" ? <ProblemsSolvedLink type={type} /> : null}
     </div>
   );
 }
