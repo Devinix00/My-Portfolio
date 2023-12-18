@@ -1,17 +1,18 @@
+import { MouseEventHandler } from "react";
 import styles from "./InfoDetail.module.scss";
-import { Link } from "react-router-dom";
 
 interface IProps {
-  path: string;
+  id: string;
   content: string;
+  handleCloseMenu: MouseEventHandler<HTMLAnchorElement>;
 }
 
-function InfoDetail({ path, content }: IProps): JSX.Element {
+function InfoDetail({ id, content, handleCloseMenu }: IProps): JSX.Element {
   return (
     <>
-      <Link to={path} className={styles.link}>
+      <a href={`#${id}`} className={styles.link} onClick={handleCloseMenu}>
         {content}
-      </Link>
+      </a>
     </>
   );
 }

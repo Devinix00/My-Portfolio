@@ -6,12 +6,14 @@ import DetailTitle from "../../atoms/detailTitle/DetailTitle";
 
 function AboutMe(): JSX.Element {
   return (
-    <div className={styles.container}>
-      <DetailTitle title="About Me" />
-      <MyProfileInfo>
-        <MyPicture />
-        <AboutMeInfoContainer />
-      </MyProfileInfo>
+    <div className={styles.container} id="aboutMe">
+      <div className={styles.borderContainer}>
+        <DetailTitle title="About Me" />
+        <MyProfileInfo>
+          <MyPicture />
+          <AboutMeInfoContainer />
+        </MyProfileInfo>
+      </div>
     </div>
   );
 }

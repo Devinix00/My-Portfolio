@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, MouseEventHandler, SetStateAction } from "react";
 import InfoDetail from "../../atoms/infoDetail/InfoDetail";
 import styles from "./HeaderInfo.module.scss";
 import useHandleResizeHeader from "../../../hooks/useHandleResizeHeader/useHandleResizeHeader";
@@ -6,9 +6,14 @@ import useHandleResizeHeader from "../../../hooks/useHandleResizeHeader/useHandl
 interface IProps {
   isMenuClicked: boolean | null;
   setIsMenuClicked: Dispatch<SetStateAction<boolean | null>>;
+  handleCloseMenu: MouseEventHandler<HTMLAnchorElement>;
 }
 
-function HeaderInfo({ isMenuClicked, setIsMenuClicked }: IProps): JSX.Element {
+function HeaderInfo({
+  isMenuClicked,
+  setIsMenuClicked,
+  handleCloseMenu,
+}: IProps): JSX.Element {
   const animationClasses: { [key: string]: string | null } = {
     true: styles.clicked,
     null: null,
@@ -27,9 +32,21 @@ function HeaderInfo({ isMenuClicked, setIsMenuClicked }: IProps): JSX.Element {
   return (
     <>
       <div className={clickedClass}>
-        <InfoDetail path="/" content="About me" />
-        <InfoDetail path="/" content="Tech stacks" />
-        <InfoDetail path="/" content="Projects" />
+        <InfoDetail
+          id="aboutMe"
+          content="About me"
+          handleCloseMenu={handleCloseMenu}
+        />
+        <InfoDetail
+          id="techStacks"
+          content="Tech stacks"
+          handleCloseMenu={handleCloseMenu}
+        />
+        <InfoDetail
+          id="projects"
+          content="Projects"
+          handleCloseMenu={handleCloseMenu}
+        />
       </div>
     </>
   );

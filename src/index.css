@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
 * {
   font-family: "Gowun Dodum", sans-serif;
   box-sizing: border-box;

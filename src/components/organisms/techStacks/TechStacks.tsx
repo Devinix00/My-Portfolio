@@ -64,7 +64,7 @@ const techStacks: ITechStack[] = [
 
 function TechStacks(): JSX.Element {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="techStacks">
       <DetailTitle title="Tech Stacks" />
       <TechStackIconAndContentContainer>
         {techStacks.map((techStack, index) => (

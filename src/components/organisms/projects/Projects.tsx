@@ -4,7 +4,7 @@ import styles from "./Projects.module.scss";
 
 function Projects(): JSX.Element {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="projects">
       <DetailTitle title="Projects" />
       <ProjectContainer />
     </div>
