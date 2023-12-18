@@ -17,9 +17,7 @@ function useShowMenu({ isMenuClicked, setIsMenuClicked }: IProps): IReturn {
   };
 
   const handleCloseMenu = (): void => {
-    if (window.innerWidth <= 993) {
       setIsMenuClicked(() => false);
-    }
   };
   return { isMenuClicked, handleClickMenu, handleCloseMenu };
 }

@@ -40,7 +40,7 @@
     gap: 0;
     background-color: #333333;
   }
-  
+
   @include respond-above("sm") {
   }
   @include respond-above("md") {
@@ -52,8 +52,6 @@
   }
 
   @include respond-below("lg") {
-    display: none;
-
     &.clicked {
       @include commonSmallStyle();
       animation: slideDown 0.2s ease forwards;
