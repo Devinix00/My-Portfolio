@@ -111,26 +111,6 @@ const blogModalContents: IModalContents[] = [
     blogLink:
       "https://velog.io/@dpldpl/Next.Js-Server-Action-API-응답-데이터-캐시-Revalidate-문제-해결",
   },
-  {
-    title:
-      "5. Next.Js Hydration 에러 해결하기: useEffect를 활용한 클라이언트 사이드 렌더링",
-
-    circumstance: `서버 사이드 렌더링을 구현하던 중, 
-    클라이언트 사이드에서 페이지가 로드될 때 Hydration 에러 발생.`,
-
-    reason: `Hydration 에러는 서버에서 생성된 HTML 마크업과 
-    클라이언트에서 React가 활성화하려는 마크업 사이에 불일치가 있을 때 발생. 
-    이 경우, 서버와 클라이언트 간의 렌더링 불일치는 
-    주로 동적 라우팅, 사용자 인증 상태, 조건부 렌더링 등 
-    클라이언트 사이드에서만 접근 가능한 브라우저 API나 상태에 의존하는 로직에서 비롯되었음.`,
-
-    process: `useEffect 훅을 사용하여 클라이언트 사이드에서만 실행되어야 하는 로직을 격리시킴. 
-    브라우저 환경에서만 접근할 수 있는 API와 상태를 안전하게 사용할 수 있도록 함으로
-    서버와 클라이언트 사이의 마크업 불일치를 해결.`,
-
-    blogLink:
-      "https://velog.io/@dpldpl/Next.Js-Hydration-에러-해결하기-useEffect를-활용한-클라이언트-사이드-렌더링-문제-해결",
-  },
 ];
 const AIVariableNameContents: IModalContents[] = [
   {
