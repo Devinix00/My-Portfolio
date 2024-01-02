@@ -17,6 +17,7 @@ const projectTypes: IProject[] = [
       "SCSS",
       "MUI",
       "Zustand",
+      "Framer Motion",
     ],
     githubBracket: "Github",
     githubLink: "https://github.com/Devinix00/my-portfolio",

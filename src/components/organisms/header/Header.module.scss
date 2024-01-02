@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   transition: none;
+  z-index: 1;
 
   .inner {
     width: 90%;

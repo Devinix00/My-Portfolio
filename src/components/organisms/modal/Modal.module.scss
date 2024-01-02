@@ -30,6 +30,7 @@
   left: 0;
   right: 0;
   animation: slideDown 0.4s ease;
+  z-index: 2;
 
   &.close {
     animation: slideUp 0.4s ease;
