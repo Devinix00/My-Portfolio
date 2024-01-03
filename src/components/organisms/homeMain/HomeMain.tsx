@@ -22,4 +22,5 @@ export default HomeMain;
 
 const Container = styled.main`
   flex: 1;
+  overflow-x: hidden;
 `;
