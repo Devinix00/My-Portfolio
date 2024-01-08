@@ -1,23 +1,6 @@
 import styled from "styled-components";
 import TechStackDetailTitle from "../../atoms/techStackDetailTitle/TechStackDetailTitle";
 import OtherTechStack from "../../atoms/otherTechStack/OtherTechStack";
-import { Variants, motion } from "framer-motion";
-
-const techStackVariantToLeft: Variants = {
-  offscreen: {
-    opacity: 0,
-    x: 150,
-  },
-  onscreen: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      type: "spring",
-      bounce: 0.2,
-      duration: 1.5,
-    },
-  },
-};
 
 interface IProps {
   title: string;
@@ -25,12 +8,7 @@ interface IProps {
 
 function OtherTechStacks({ title }: IProps): JSX.Element {
   return (
-    <Container
-      initial="offscreen"
-      whileInView="onscreen"
-      viewport={{ once: true, margin: "-75px" }}
-      variants={techStackVariantToLeft}
-    >
+    <Container>
       <TechStackDetailTitle title={title} isOtherTechStacks={true} />
       <Wrapper>
         <OtherTechStack title="Axios" />
@@ -46,7 +24,7 @@ function OtherTechStacks({ title }: IProps): JSX.Element {
 
 export default OtherTechStacks;
 
-const Container = styled(motion.div)`
+const Container = styled.div`
   padding: 20px;
 
   ${({ theme }) => theme.breakpoints.down("sm")} {
