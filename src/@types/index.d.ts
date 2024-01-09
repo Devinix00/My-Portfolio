@@ -8,6 +8,7 @@ interface IProject {
   techStacks: string[];
   githubBracket: string;
   githubLink: string;
+  images?: string[];
 }
 
 interface IModalContents {

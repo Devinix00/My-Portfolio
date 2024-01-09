@@ -1,5 +1,21 @@
 import Project from "../project/Project";
 import styles from "./ProjectContainer.module.scss";
+import myPortfolioImage1 from "../../../images/myPortfolio/KakaoTalk_Photo_2024-01-09-15-20-03 001.jpeg";
+import myPortfolioImage2 from "../../../images/myPortfolio/KakaoTalk_Photo_2024-01-09-15-20-04 002.jpeg";
+import myPortfolioImage3 from "../../../images/myPortfolio/KakaoTalk_Photo_2024-01-09-15-20-04 003.jpeg";
+import myPortfolioImage4 from "../../../images/myPortfolio/KakaoTalk_Photo_2024-01-09-15-25-38 001.jpeg";
+import myPortfolioImage5 from "../../../images/myPortfolio/KakaoTalk_Photo_2024-01-09-15-25-38 002.jpeg";
+import blogImage1 from "../../../images/blog/KakaoTalk_Photo_2024-01-09-15-42-00 001.jpeg";
+import blogImage2 from "../../../images/blog/KakaoTalk_Photo_2024-01-09-15-42-01 002.jpeg";
+import blogImage3 from "../../../images/blog/KakaoTalk_Photo_2024-01-09-15-42-01 003.jpeg";
+import blogImage4 from "../../../images/blog/KakaoTalk_Photo_2024-01-09-15-42-01 004.jpeg";
+import blogImage5 from "../../../images/blog/KakaoTalk_Photo_2024-01-09-15-42-01 005.jpeg";
+import AIVariavleNameImage1 from "../../../images/AI-Variable-Name/KakaoTalk_Photo_2024-01-09-14-07-28 004.jpeg";
+import AIVariavleNameImage2 from "../../../images/AI-Variable-Name/KakaoTalk_Photo_2024-01-09-14-07-28 005.jpeg";
+import AIVariavleNameImage3 from "../../../images/AI-Variable-Name/KakaoTalk_Photo_2024-01-09-14-07-28 006.jpeg";
+import toDoListImage1 from "../../../images/toToList/KakaoTalk_Photo_2024-01-09-14-07-28 001.jpeg";
+import toDoListImage2 from "../../../images/toToList/KakaoTalk_Photo_2024-01-09-14-07-28 002.jpeg";
+import toDoListImage3 from "../../../images/toToList/KakaoTalk_Photo_2024-01-09-14-07-28 003.jpeg";
 
 const projectTypes: IProject[] = [
   {
@@ -17,9 +33,17 @@ const projectTypes: IProject[] = [
       "SCSS",
       "MUI",
       "Zustand",
+      "Swiper",
     ],
     githubBracket: "Github",
     githubLink: "https://github.com/Devinix00/my-portfolio",
+    images: [
+      myPortfolioImage1,
+      myPortfolioImage2,
+      myPortfolioImage3,
+      myPortfolioImage4,
+      myPortfolioImage5,
+    ],
   },
   {
     type: "Blog",
@@ -42,6 +66,7 @@ const projectTypes: IProject[] = [
     ],
     githubBracket: "Github",
     githubLink: "https://github.com/Devinix00/blog-project",
+    images: [blogImage1, blogImage2, blogImage3, blogImage4, blogImage5],
   },
   {
     type: "AI Variable Name",
@@ -56,6 +81,7 @@ const projectTypes: IProject[] = [
     techStacks: ["Next.Js", "Typescript", "MUI", "SCSS", "Zustand"],
     githubBracket: "Github",
     githubLink: "https://github.com/Devinix00/AI-Variable-Name",
+    images: [AIVariavleNameImage1, AIVariavleNameImage2, AIVariavleNameImage3],
   },
   {
     type: "To Do List",
@@ -78,6 +104,7 @@ const projectTypes: IProject[] = [
     ],
     githubBracket: "Github",
     githubLink: "https://github.com/Devinix00/ToDoList-Next13-Atomic",
+    images: [toDoListImage1, toDoListImage2, toDoListImage3],
   },
 ];
 

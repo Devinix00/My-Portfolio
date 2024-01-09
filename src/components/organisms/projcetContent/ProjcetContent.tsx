@@ -22,6 +22,7 @@ function ProjcetContent({ ...project }: IProject): JSX.Element {
               }
             : { transition: "none" }
         }
+        project={project}
       />
       <ProjectDetail {...project} />
     </div>
