@@ -1,4 +1,4 @@
-import ProblemsSolvedLink from "../../problemsSolvedLink/ProblemsSolvedLink";
+import ProblemsSolvedLink from "../../atoms/problemsSolvedLink/ProblemsSolvedLink";
 import ProjectDetailDescriptionContainer from "../projectDetailDescriptionContainer/ProjectDetailDescriptionContainer";
 import ProjectDetailListsContainer from "../projectDetailListsContainer/ProjectDetailListsContainer";
 import ProjectGithubContainer from "../projectGithubContainer/ProjectGithubContainer";

@@ -1,4 +1,4 @@
-import useOpenModalType from "../../hooks/useOpenModalType/useOpenModalType";
+import useOpenModalType from "../../../hooks/useOpenModalType/useOpenModalType";
 import styles from "./ProblemsSolvedLink.module.scss";
 
 interface IProps {
