@@ -23,7 +23,6 @@ function ProjectImages({ style, project }: IProps): JSX.Element {
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
-      // scrollbar={{ draggable: true }}
     >
       {project.images?.map((image, index) => (
         <SwiperSlide key={index}>

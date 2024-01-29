@@ -111,6 +111,24 @@ const blogModalContents: IModalContents[] = [
     blogLink:
       "https://velog.io/@dpldpl/Next.Js-Server-Action-API-응답-데이터-캐시-Revalidate-문제-해결",
   },
+  {
+    title: "5. Next.Js Hydration: SSR과 CSR 간의 class 불일치 문제 해결하기",
+
+    circumstance: `좋아요를 누른 사용자에 한해 좋아요 버튼의 색상을 바꿔주는 기능을 
+    구현하던 도중 Hydration 관련 에러 발생.`,
+
+    reason: `서버 사이드와 클라이언트 사이드의 상태 불일치가 원인이었음.
+    Hydration 이전 초기 페이지 로드 시점의 isLiked 상태와 
+    최종 렌더링 시점의 isLiked 상태가 달랐기 때문.`,
+
+    process: `SSR과 CSR사이의 불일치를 해결하기 위해
+    useState를 사용하여 초기값 설정.
+    이후에 useEffect를 이용하여 클라이언트 사이드에서 렌더링이 된 이후에
+    상태를 업데이트 하는 것으로 코드 수정.`,
+
+    blogLink:
+      "https://velog.io/@dpldpl/Next.Js-Hydration-SSR과-CSR-간의-class-불일치-문제-해결하기-문제-해결",
+  },
 ];
 const AIVariableNameContents: IModalContents[] = [
   {
