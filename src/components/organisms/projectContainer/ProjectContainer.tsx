@@ -62,7 +62,6 @@ const projectTypes: IProject[] = [
       "MUI",
       "SCSS",
       "Zustand",
-      "React-Query",
     ],
     githubBracket: "Github",
     githubLink: "https://github.com/Devinix00/blog-project",

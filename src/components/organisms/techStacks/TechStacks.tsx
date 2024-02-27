@@ -52,7 +52,7 @@ const techStacks: ITechStack[] = [
     imgSrc: reactLogo,
     title: "React",
     content:
-      "React를 활용해 사용자 인터페이스를 구축할 수 있습니다. 컴포넌트 기반 Atomic Design Pattern을 활용해 재사용 가능한 UI 요소를 개발합니다. React의 life cycle을 이해하고 있으며, hook을 이용해 상태 관리와 사이드 이펙트를 처리합니다.",
+      "React를 활용해 재사용 가능한 컴포넌트 기반의 사용자 인터페이스를 구축할 수 있습니다. React의 life cycle을 이해하고 있으며, hook을 이용해 상태 관리와 사이드 이펙트를 처리합니다.",
   },
   {
     id: 6,
@@ -66,7 +66,7 @@ const techStacks: ITechStack[] = [
     imgSrc: nextJsLogo,
     title: "Next.Js",
     content:
-      "App 라우터 기반의 Next.Js 13버전으로 웹 애플리케이션을 개발하고 배포한 경험이 있으며, 클라이언트 사이드 렌더링(CSR), 서버 사이드 렌더링(SSR), 정적 사이트 생성(SSG)의 차이에 대해 이해하고 있습니다. ",
+      "App 라우터 기반의 웹 애플리케이션을 개발하고 배포한 경험이 있으며, 클라이언트 사이드 렌더링(CSR), 서버 사이드 렌더링(SSR), 정적 사이트 생성(SSG)의 차이에 대해 이해하고 있습니다. ",
   },
 ];
 
