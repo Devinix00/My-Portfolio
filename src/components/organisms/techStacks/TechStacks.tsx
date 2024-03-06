@@ -24,7 +24,7 @@ const techStacks: ITechStack[] = [
     imgSrc: htmlLogo,
     title: "HTML",
     content:
-      "웹 애플리케이션의 골격을 설계하는 데 있어 HTML을 능숙하게 사용할 수 있습니다. 구조적이고 의미 있는 마크업을 통해 강력하고 효율적인 웹사이트를 구축하려 노력합니다.",
+      "웹 애플리케이션의 골격을 설계하는 데 있어 HTML을 능숙하게 사용할 수 있습니다. 구조적이고 의미 있는 마크업을 통해 효율적인 웹사이트를 구축하려 노력합니다.",
   },
   {
     id: 2,
@@ -38,21 +38,21 @@ const techStacks: ITechStack[] = [
     imgSrc: jsLogo,
     title: "Javascript",
     content:
-      "JavaScript 기술을 사용하여 웹사이트에 동적 기능을 추가할 수 있습니다. AJAX, Fetch API를 통해 비동기적 웹 애플리케이션을 만드는 것에 능숙하며, DOM 조작을 통해 사용자와의 상호작용을 향상시킬 수 있습니다.",
+      "JavaScript 기술을 사용하여 웹사이트에 동적 기능을 추가할 수 있습니다. axios, Fetch API를 통해 비동기적 웹 애플리케이션을 만드는 것에 능숙하며, DOM 조작을 통해 사용자와의 상호작용을 향상시킬 수 있습니다.",
   },
   {
     id: 4,
     imgSrc: tsLogo,
     title: "Typscript",
     content:
-      "TypeScript를 사용하여 더 안정적이고 유지보수하기 쉬운 웹 애플리케이션을 개발합니다. 강력한 타입 시스템을 통해 타입 에러와 같은 에러를 줄이고, 코드 관리를 효율적으로 하기 위해 노력합니다.",
+      "TypeScript를 사용하여 더 안정적이고 유지보수하기 쉬운 웹 애플리케이션을 개발합니다. 타입 시스템을 통해 타입 에러와 같은 에러를 줄이고, 코드 관리를 효율적으로 하기 위해 노력합니다.",
   },
   {
     id: 5,
     imgSrc: reactLogo,
     title: "React",
     content:
-      "React를 활용해 재사용 가능한 컴포넌트 기반의 사용자 인터페이스를 구축할 수 있습니다. React의 life cycle을 이해하고 있으며, hook을 이용해 상태 관리와 사이드 이펙트를 처리합니다.",
+      "custom hook으로 로직과 UI를 분리하여 이들의 재사용성을 향상시키기 위해 노력합니다. 함수형 컴포넌트의 life cycle을 이해하고 있으며, React의 여러 hook을 이용해 상태 관리와 사이드 이펙트를 처리합니다.",
   },
   {
     id: 6,
@@ -66,7 +66,7 @@ const techStacks: ITechStack[] = [
     imgSrc: nextJsLogo,
     title: "Next.Js",
     content:
-      "App 라우터 기반의 웹 애플리케이션을 개발하고 배포한 경험이 있으며, 클라이언트 사이드 렌더링(CSR), 서버 사이드 렌더링(SSR), 정적 사이트 생성(SSG)의 차이에 대해 이해하고 있습니다. ",
+      "App 라우터 기반의 웹 애플리케이션을 개발하고 배포한 경험이 있습니다. 서버 컴포넌트와 클라이언트 컴포넌트에 대해 이해하고 있으며, 이를 적절히 이용해 웹 애플리케이션을 개발할 수 있습니다.",
   },
 ];
 
