@@ -12,11 +12,10 @@ function OtherTechStacks({ title }: IProps): JSX.Element {
       <TechStackDetailTitle title={title} isOtherTechStacks={true} />
       <Wrapper>
         <OtherTechStack title="Axios" />
-        <OtherTechStack title="Redux toolkit" />
+        <OtherTechStack title="Redux toolkit (RTK)" />
+        <OtherTechStack title="RTK Query" />
         <OtherTechStack title="Zustand" />
         <OtherTechStack title="styled-components" />
-        <OtherTechStack title="styled-breakpoints" />
-        <OtherTechStack title="MUI" />
       </Wrapper>
     </Container>
   );
