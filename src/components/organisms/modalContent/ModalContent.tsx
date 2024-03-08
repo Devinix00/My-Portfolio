@@ -129,6 +129,33 @@ const blogModalContents: IModalContents[] = [
     blogLink:
       "https://velog.io/@dpldpl/Next.Js-Hydration-SSR과-CSR-간의-class-불일치-문제-해결하기-문제-해결",
   },
+  {
+    title: "6. JWT access token 전역으로 저장하지 않고 다른 요청 헤더로 보내기",
+
+    circumstance: `기존 코드에서 access token을 localStorage에 저장하여 관리하고 있었는데,
+    이 방법은 보안에 취약하다는 이유로 권장되지 않는다고 한다.
+    axios를 이용하면 access token을 전역으로 관리하지 않고도
+    다른 요청 헤더에 전달할 수 있지만
+    Next.Js에서는 확장된 fetch 함수가 권장된다기에 fetch함수로 서버와 통신하며 
+    access token을 좀 더 안전하게 관리하는 법에 대해서 고민하고 있었다.`,
+
+    reason: `
+    만약 웹 애플리케이션이 XSS 공격에 취약한 경우, 
+    `,
+
+    process: `
+    utils 디렉토리에 tokenManager.ts 파일을 생성하고, 
+    클로저 패턴을 도입하여 access token을 함수의 지역변수로 설정하였다.
+    해당 함수는 setToken과 getToken이라는 메소드를 반환한다.
+    이 때, access token은 함수의 지역변수이므로 외부에서 접근이 불가능하며
+    setToken과 getToken 메소드를 이용해서만 접근이 가능하다.
+    클로저 패턴을 도입하여 토큰을 전역으로 저장하지 않고
+    더 안전하게 관리할 수 있었다.
+    `,
+
+    blogLink:
+      "https://velog.io/@dpldpl/JWT-access-token-전역으로-저장하지-않고-다른-요청-헤더로-보내기-문제-해결",
+  },
 ];
 const AIVariableNameContents: IModalContents[] = [
   {
