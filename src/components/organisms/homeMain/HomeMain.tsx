@@ -3,7 +3,7 @@ import MySimpleInfo from "../../molecules/mySimpleInfo/MySimpleInfo";
 import styles from "./HomeMain.module.scss";
 import AboutMe from "../aboutMe/AboutMe";
 import TechStacks from "../techStacks/TechStacks";
-import Projects from "../projects/Projects";
+import Practices from "../practices/Practices";
 
 function HomeMain(): JSX.Element {
   return (
@@ -12,7 +12,7 @@ function HomeMain(): JSX.Element {
         <MySimpleInfo />
         <AboutMe />
         <TechStacks />
-        <Projects />
+        <Practices />
       </div>
     </Container>
   );

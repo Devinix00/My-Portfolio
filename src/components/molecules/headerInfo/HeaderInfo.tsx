@@ -43,8 +43,8 @@ function HeaderInfo({
           handleCloseMenu={handleCloseMenu}
         />
         <InfoDetail
-          id="projects"
-          content="Projects"
+          id="practices"
+          content="Practices"
           handleCloseMenu={handleCloseMenu}
         />
       </div>
